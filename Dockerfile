@@ -26,4 +26,4 @@ WORKDIR /usr/src/app
 ENV CHROME_BIN=/usr/bin/chromium-browser \
     CHROME_PATH=/usr/lib/chromium/
 
-CMD ["chromium-browser", "--no-sandbox", "--headless", "--disable-web-security", "--disable-dev-shm-usage", "--disable-software-rasterizer", "--remote-debugging-port=9222", "--load-extension=uBlock0.chromium", "--remote-debugging-address=0.0.0.0", "--disable-features=IsolateOrigins,site-per-process", "--enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb"]
+CMD ["chromium-browser", "--no-sandbox", "--headless", "--disable-web-security", "--disable-dev-shm-usage", "--disable-software-rasterizer", "--remote-debugging-port=9222", "--load-extension=uBlock0.chromium", "--remote-debugging-address=0.0.0.0", "--disable-features=IsolateOrigins,site-per-process", "--enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb", "--window-size=1920,1080"]
